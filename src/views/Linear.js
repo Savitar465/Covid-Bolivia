@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-import '../node_modules/react-vis/dist/style.css';
+import '../../node_modules/react-vis/dist/style.css';
 import {XAxis, YAxis,XYPlot, LineSeries, VerticalGridLines, HorizontalGridLines} from 'react-vis';
 
 class App extends Component {
