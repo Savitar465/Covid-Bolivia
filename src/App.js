@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import '../node_modules/react-vis/dist/style.css';
-import {XAxis, YAxis,XYPlot, LineSeries, VerticalGridLines, HorizontalGridLines} from 'react-vis';
+import Linear from "./views/Linear"
+
 
 class App extends Component {
   render() {
-    const data = [
+    const points = [
       {x: 0, y: 8},
       {x: 1, y: 5},
       {x: 2, y: 4},
@@ -19,13 +20,7 @@ class App extends Component {
     ];
     return (
       <div className="App">
-        <XYPlot height={300} width={300}>
-          <VerticalGridLines />
-          <HorizontalGridLines />
-          <XAxis />
-          <YAxis />
-          <LineSeries data={data} />
-        </XYPlot>
+        <Linear data={points}></Linear>
       </div>
     );
   }
